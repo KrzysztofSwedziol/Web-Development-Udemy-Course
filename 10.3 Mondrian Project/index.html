@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+    .red{
+      margin : 0px;
+      background-color:#E72F24;
+      
+      
+    }
+    .second{
+      margin : 0px;
+      grid-column: span 3;
+      background-color:#F0F1EC ;
+      
+    }
+    .third{
+      margin : 0px;
+      background-color: #F0F1EC;
+      grid-row : span 2;
+    }
+    .fourth{
+      margin : 0px;
+      background-color: #F0F1EC;
+      grid-row : span 2;
+      grid-column: span 2;
+    }
+    .fifth{
+      margin : 0px;
+      background-color: #004592;
+    }
+    .sixth{
+      margin : 0px;
+      background-color: #F0F1EC;
+      grid-row : span 2;
+      border-top : 9px solid black;
+    }
+    .seventh{
+      margin : 0px;
+      background-color: #F0F1EC;
+    }
+    .eight{
+      margin : 0px;
+      background-color:#F9D01E ;
+    }
+    .nineth{
+      margin : 0px;
+      background-color:#232629;
+    }
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p class="red"></p>
+    <p class = "second"></p>
+    <p class = "third"></p>
+    <p class = "fourth"></p>
+    <p class = "fifth"></p>
+    <p class = "sixth"></p>
+    <p class = "seventh"></p>
+    <p class = "eight"></p>
+    <p class = "nineth"></p>
+  </div>
+  
+  
+</body>
+
+</html>
