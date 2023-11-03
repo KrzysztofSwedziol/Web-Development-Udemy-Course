@@ -1,0 +1,67 @@
+#container{
+    width : 100%;
+    height: 1000px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg,#e52e71,#ff8a00);
+
+}
+
+#noatall{
+    position: absolute;
+    top:30%;
+    height : 40%;
+    right : 10%;
+}
+
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 30%;
+    top: 20%;
+    width: 450px;
+    height: 450px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+    0%,100%{
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+        transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+body,html{margin:0;padding:0;height:100%;}
+body{
+    background: #f1f1f1;
+    background-size:cover;
+    font-family: 'Cabin Condensed', sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+svg{font-weight:bold;max-width:600px;height:100%;}
